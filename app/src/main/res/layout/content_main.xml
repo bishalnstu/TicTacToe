@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.root.tictactoe.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="change"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:onClick="change"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:onClick="change"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="change"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:onClick="change"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:onClick="change"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="change"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:onClick="change"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:onClick="change"
+            android:tag="8" />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <ImageView
+            android:id="@+id/press"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:background="@android:color/transparent"
+            android:onClick="resetAll"
+            app:srcCompat="@drawable/tryagain" />
+    </LinearLayout>
+
+</RelativeLayout>
